@@ -1,0 +1,15 @@
+#nav.nav{
+width: 1200px;
+margin:0px auto;
+padding: 15px;
+background-color:#a4c3b2;
+border: 2px solid  #6b9080;
+text-align: center;
+
+}
+
+#nav .nav-link {
+    color:black;
+    font-size:2rem;
+    
+}
