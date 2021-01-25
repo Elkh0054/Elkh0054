@@ -1,15 +1,50 @@
+
+
+
+
+
 #nav.nav{
 width: 1200px;
 margin:0px auto;
-padding: 15px;
-background-color:#a4c3b2;
-border: 2px solid  #6b9080;
+padding: 30px;
+background-color:#44A1A0;
+border: 5px solid  #0D5C63;
+border-style: dashed;
 text-align: center;
 
 }
 
 #nav .nav-link {
+    display: inline;
     color:black;
     font-size:2rem;
-    
+    margin:2rem;
+
+}
+
+#main.main {
+    max-width: 1200px;
+    background-color: #E7EDEE;
+}  
+
+#home.home {
+    background-color:#FFFFFA;
+    display: block;
+    margin-top: 2rem;
+    border:3px solid #0D5C63;
+    padding: 0%;}
+
+#about.about{
+    display: block;
+    margin-top: 2rem;
+    background-color: #78CDD7;
+    border:3px solid #0D5C63;
+    color: black;
+    padding: 0;
+}
+   
+#contact.contact{
+    display:block;
+    margin-top: 2rem;
+    background-color: black;
 }
