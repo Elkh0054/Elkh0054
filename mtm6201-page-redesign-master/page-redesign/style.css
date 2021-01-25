@@ -1,42 +1,33 @@
-
-
-
-
-
 #nav.nav{
-width: 1123px;
+width: 1127px;
 margin:0px auto;
 padding: 30px;
 background-color:#44A1A0;
 border: 5px solid  #0D5C63;
-border-style: dashed;
 text-align: center;
-
-}
-
-#nav .nav-link {
-    display: inline;
-    color:black;
-    font-size:2rem;
-    margin:2rem;
-
 }
 
 #main.main {
     max-width: 1200px;
     background-color: #FFFFFA;
-}  
+}
+#nav .nav-link {
+    display: inline;
+    color:black;
+    font-size:2rem;
+    margin:2rem;
+}
 
 #home.home {
     background-color:#C3D7D5;
     display: block;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border:3px solid #0D5C63;
     padding: 0%;}
 
 #about.about{
     display: block;
-    margin-top: 2rem;
+    margin-top: 1rem;
     background-color: #85ADAD;
     border:3px solid #0D5C63;
     color: black;
@@ -45,8 +36,9 @@ text-align: center;
    
 #contact.contact{
     display:block;
-    margin-top: 2rem;
+    margin-top: 1rem;
     background-color: #4A8589;
+    border:3px solid #0D5C63;
     padding: 1rem;
 }
 
