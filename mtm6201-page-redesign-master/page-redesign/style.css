@@ -15,16 +15,25 @@ text-align: center;
     display: inline;
     color:black;
     font-size:2rem;
-    margin:2rem;
+    margin:8rem;
+    font-family:Tahoma, Verdana, sans-serif;
 }
-
 #home.home {
     background-color:#C3D7D5;
     display: block;
     margin-top: 1rem;
     border:3px solid #0D5C63;
-    padding: 0%;}
-
+    padding: 2%;
+    text-align: left;
+    font-family: verdana;
+}
+    #home .page-title {
+        text-align: left;
+        font-family: verdana;
+        font-size: 24px;
+        margin: .0.5rem;
+        color:#043b41;
+}   
 #about.about{
     display: block;
     margin-top: 1rem;
@@ -32,8 +41,15 @@ text-align: center;
     border:3px solid #0D5C63;
     color: black;
     padding: 0;
+    text-align: right;
 }
-   
+#about .section-title {
+    text-align: left;
+        font-family: verdana;
+        font-size: 24px;
+        margin: 2rem;
+        color:#043b41;
+}  
 #contact.contact{
     display:block;
     margin-top: 1rem;
@@ -41,8 +57,14 @@ text-align: center;
     border:3px solid #0D5C63;
     padding: 1rem;
 }
-
 #contact .contact-form {
     background-color: #E1EBE8;
 }
-
+#contact .section-title {
+    text-align: left;
+        font-family: verdana;
+        font-size: 24px;
+        margin: 2rem;
+        margin-left:1rem;
+        color:#021c1f;
+}
