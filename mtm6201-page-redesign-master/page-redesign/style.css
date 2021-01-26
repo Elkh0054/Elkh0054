@@ -26,6 +26,7 @@ text-align: center;
     padding: 2%;
     text-align: left;
     font-family: verdana;
+    color: black;
 }
     #home .page-title {
         text-align: left;
@@ -36,20 +37,29 @@ text-align: center;
 }   
 #about.about{
     display: block;
+    text-align:left;
     margin-top: 1rem;
     background-color: #85ADAD;
     border:3px solid #0D5C63;
     color: black;
-    padding: 0;
-    text-align: right;
+    padding: 2%;
+    padding-top: 1%;
+    font-family: verdana;
+    font-size: 20px; 
 }
 #about .section-title {
     text-align: left;
         font-family: verdana;
         font-size: 24px;
-        margin: 2rem;
+        margin: 1rem;
         color:#043b41;
+        padding: 0%;
 }  
+#about .about-image {
+    width: 200px;
+    height: 200px;
+    float:left;
+}
 #contact.contact{
     display:block;
     margin-top: 1rem;
@@ -57,6 +67,7 @@ text-align: center;
     border:3px solid #0D5C63;
     padding: 1rem;
 }
+
 #contact .contact-form {
     background-color: #E1EBE8;
 }
