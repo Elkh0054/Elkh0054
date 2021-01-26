@@ -6,7 +6,6 @@ background-color:#44A1A0;
 border: 5px solid  #0D5C63;
 text-align: center;
 }
-
 #main.main {
     max-width: 1200px;
     background-color: #FFFFFA;
@@ -23,9 +22,10 @@ text-align: center;
     display: block;
     margin-top: 1rem;
     border:3px solid #0D5C63;
-    padding: 2%;
+    padding:2%;
     text-align: left;
     font-family: verdana;
+    font-size:50px;
     color: black;
 }
     #home .page-title {
