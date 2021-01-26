@@ -87,11 +87,14 @@ text-align: center;
         color:#021c1f;
 }
 
+#contact .contact-form-label{
+    font-family: verdana;
+    font-size: 20px;
+}
 footer {
     text-align:center;
     font-size: 20px;
 }
-
 
 @media screen and (max-width:760px){
     #nav .nav-link{
