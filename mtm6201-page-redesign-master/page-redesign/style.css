@@ -20,9 +20,6 @@ text-align: center;
     font-family:Tahoma, Verdana, sans-serif;
 }
 
-#nav .nav-link a:hover{
-    background-color: black;
-}
 #home.home {
     background-color:#C3D7D5;
     display: block;
