@@ -54,7 +54,9 @@ body {
 	background-color:#f7f7ff;
 }
 
-header {
-	
-	width: 20px;
+img {
+	width: 100px;
+	padding-left:5rem;
+	padding-top: 2rem;
+
 }
