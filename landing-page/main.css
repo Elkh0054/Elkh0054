@@ -72,6 +72,10 @@ body {
 	background-size: 50%;
 }
 
+.text {
+	display: grid;
+
+}
 h1 {
 font-size: 60px;
 font-weight: 600;
@@ -82,8 +86,10 @@ color:#333131;
 
 p.start{
 	padding-left:4rem;
+	font-size: 20px;
 	font-weight: light;
-
+	
+	
 }
 
 form.form{
@@ -172,6 +178,7 @@ margin:0.5px;
 
 
  .calculate {
+	 
 padding-left: 4rem;
 padding-top: 0.5rem;
 }
@@ -191,9 +198,11 @@ padding-top: 0.5rem;
 	font-weight: bolder;
 }
 
-.icons  {
-
-	padding: 0.5rem;
-	}
+.icons {
+	display: flex;
+	 flex-wrap: wrap;
+	 justify-content: space-between;
+	 flex-grow: 1;
+}
 
 
