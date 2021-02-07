@@ -55,11 +55,13 @@
     <label for="phone"></label> 
     <input type="text" id="phone"   name="phone"    placeholder="Phone number"> 
 
-    <div class="radio">
-    <input type="radio" id="agree"   name="agree"> 
-    <label for="agree" >I agree to dash terms</label> 
-</div>
-    <input type="button" id="btn"  onclick="submit" value="DRIVE WITH US">
+ 
+    <label for="agree">I agree to dash terms</label>
+    <input type="checkbox" id="agree">  
+
+   
+
+    <input type="button" id="btn" class="btn"  onclick="submit" value="DRIVE WITH US">
 
     <p class="applied"> Already applied? <span class="half">Check your application status here.</span> </p>
       </form>
@@ -69,6 +71,7 @@
     <div class="calc">
         <h3>See how much you can earn with Dash.</h3>
         <p class="hrs">how many hours do you want to drive with us this weeek?</p>
+        
         <form class="calculate">
            
             <input type="text" id="hours"   name="hours"    placeholder="Hours">
@@ -77,7 +80,8 @@
             <input type="text" id="city"   name="city"    placeholder="city">
             <label for="City"></label> 
 
-            <input type="button" id="total"  onclick="submit" placeholder="Calculate">
+            <input type="button" id="total"  onclick="submit" value="CALCULATE">
+           
             
             
         </form>
