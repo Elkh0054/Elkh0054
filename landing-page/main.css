@@ -100,6 +100,7 @@ p.start{
 
 .table {
 	display:grid;
+	grid-template-columns: auto;
 	align-self: flex-end;
 	width: 20rem;
 	background-color:white;
@@ -120,7 +121,7 @@ form.form input {
 	border: none;
 	border-radius: 5px;
 	height:3rem;
-	width: 20rem;
+	width: 18rem;
 	padding-left: 0.5rem;
 	margin:0.5rem;
 }
@@ -156,9 +157,9 @@ p.side{
 }
 
 p.applied {
-	font-size: 12px;
+	font-size: 10px;
 	
-	padding-left: 2.5rem;
+	padding-left: 1rem;
 }
 
 .half {
@@ -166,8 +167,11 @@ p.applied {
 }
 
 footer {
+	display: grid;
+grid-row: 1fr;
+grid-column: 1fr 1fr;
 	background-color:#FFFD8C;
-	height:150px;
+	height:130px;
 	width:1400px ;
 
 }
@@ -218,12 +222,54 @@ padding-top: 0.5rem;
 }
 
 .icons {
-	display: flex;
-	flex-direction: row-reverse;
-	 justify-content:start;
-	 margin-right: 1rem;
+	
+	grid-column: 3/4;
+	
+	 margin-right: 2rem;
 	 margin-bottom: 2rem;
-	 margin-top: 0;
+	 margin-top: 2rem;
 	
 }
 
+@media screen and (max-width:768px) {
+	.container{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr ;
+		background-size: 50%;
+		background-position: center;
+		margin-right: 2rem;
+		grid-template-areas:
+		"1 1 1"
+		"2 2 2"
+		"3 3 3";
+	}
+	.h1 {
+		grid-area:1;
+		margin-bottom: 0;	
+	}
+	.text {
+		display: grid;
+		grid-area:2;
+		margin-top: 0;
+	}
+	
+	.table {
+		display: grid;
+		grid-area:  3;
+		justify-content: center;
+		width:25rem;
+		height: 40rem;
+		margin-top: 15rem;
+		margin-left:8rem;
+	}
+	
+	form.form input {
+		width: 25rem;
+		height:5rem;
+		font-size: 20px;
+
+	}
+
+
+
+}
