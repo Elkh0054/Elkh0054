@@ -49,6 +49,9 @@ html {
 	margin: 0;
 	padding: 0;
 }
+/*setting sizes for the body of the page in desktop mode*/
+/* and adding the background color*/
+/*adding the scooter  image to the background and resizing it*/
 body {
 
 	width:1920px;
@@ -59,7 +62,7 @@ body {
 	background-position: center;
 	background-size: 50%;
 }
-
+ /*setting the conatiner to grids of two column and one row to adjust the content*/
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -67,6 +70,7 @@ body {
 	
 }
 
+/*setting the position and size of the page logo*/
 img {
 display: flex;
 flex-wrap: wrap;
@@ -79,7 +83,7 @@ flex-wrap: wrap;
 }
 
 
-
+/**/
 h1 {
 display:grid;
 justify-self: start;
@@ -234,42 +238,55 @@ padding-top: 0.5rem;
 @media screen and (max-width:768px) {
 	.container{
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr ;
+		grid-template-columns: 1fr 1fr 1fr 1fr ;
 		background-size: 50%;
+		
 		background-position: center;
 		margin-right: 2rem;
 		grid-template-areas:
 		"1 1 1"
 		"2 2 2"
-		"3 3 3";
-	}
-	.h1 {
-		grid-area:1;
-		margin-bottom: 0;	
-	}
-	.text {
-		display: grid;
-		grid-area:2;
-		margin-top: 0;
+		"3 3 3"
+		"4 4 4";
 	}
 	
+
+	h1 {
+		display:grid;
+		grid-area:1;
+		margin-top:-50px;
+		justify-self: start;
+		font-size: 40px;}
+
+		p.start{
+
+			padding-left:4rem;
+			font-size: 20px;
+			margin-top:-20px;
+		}
+		
+		
 	.table {
 		display: grid;
 		grid-area:  3;
 		justify-content: center;
-		width:25rem;
-		height: 40rem;
+		width:22rem;
+		height: 32rem;
 		margin-top: 15rem;
-		margin-left:8rem;
+		margin-left:2.5rem;
 	}
 	
 	form.form input {
-		width: 25rem;
-		height:5rem;
+		width: 20rem;
+		height:3rem;
 		font-size: 20px;
 
 	}
 
-
+	p.applied {
+		font-size: 20px;
+	
+		padding-left: 1rem;
+	}
 
 }
