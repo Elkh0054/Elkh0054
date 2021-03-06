@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*************************************************Styling landing page**************************************/
+/*adding font family to the page*/
+html {
+
+	font-family: 'montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+/*setting sizes for the body of the page in desktop mode*/
+/* and adding the background color*/
+/*adding the scooter  image to the background and resizing it*/
+body {
+
+	width:1920px;
+	height:900px;
+	background-color:#f7f7ff;
+	background-image: url(images/bg-image/scooter.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+}
+ /*setting the conatiner to grids of two column and one row to adjust the content*/
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr ;
+	
+}
+
+/*setting the position and size of the page logo*/
+img {
+display: flex;
+flex-wrap: wrap;
+	width: 120px;
+	height:auto;
+	padding-left:5rem;
+	padding-top:2rem;
+	padding-bottom: 3rem;
+	margin: 0;
+}
+
+
+/*adding grid to the head to display it on the left side of the page by
+justifying it to start, also ediditig its font*/
+h1 {
+display:grid;
+justify-self: start;
+font-size: 60px;
+font-weight: 600;
+padding: 2rem;
+padding-left: 4rem;
+color:#333131;
+}
+ /*editing the pargaraph of the main topic*/
+p.start{
+
+	padding-left:4rem;
+	font-size: 20px;
+
+	
+}
+/*setting the form of the page to grid to move it to the right hand side of the page */
+/*adding styles to the form by changing background and font colors and adding shadow to the form box*/
+.table {
+	display:grid;
+	grid-template-columns: auto;
+	align-self: flex-end;
+	width: 20rem;
+	background-color:white;
+	color: #333131;
+	padding:20px;
+	margin:2rem;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*styling the form inputs places to change their color, size and border*/
+form.form input {
+	
+
+	background-color:rgba(231, 226, 226, 0.479);
+	border: none;
+	border-radius: 5px;
+	height:3rem;
+	width: 18rem;
+	padding-left: 0.5rem;
+	margin:0.5rem;
+}
+
+/*editing the font of the h1 inside the form*/
+
+h2 {
+
+	padding: 0.5rem;
+	font-size: 25px;
+	font-weight: bold;
+}
+/*editing the font and location of the paragraph inside the form*/
+p.side{
+	
+	padding: 0.5rem;
+	padding-left:0.5rem;
+	font-size: 15px;
+}
+
+
+/*adding colors and styling the button of the form */
+.btn {
+	background-color:#57EEAB;
+	font-size: 25px;
+	font-weight: bold;
+	margin:2rem;
+	border-radius: 5px;
+	border: none;
+	color: #333131;
+	width: 70%;
+}
+
+/*editing the first part of the applied paragraph*/
+p.applied {
+	font-size: 10px;	
+	padding-left: 1rem;
+}
+/*editing the second part of the applied paragraph*/
+.half {
+	color:#FF8480;
+}
+
+/*styling the footer and added a grid to it to move its contnent*/
+footer {
+	display: grid;
+    grid-column: 1fr 1fr;
+	background-color:#FFFD8C;
+	height:130px;
+	width:1400px ;
+
+}
+/*styling the h3 of the footer and resizing it*/
+h3{
+	padding-top:2rem;
+	padding-left: 4rem;
+	font-size: 15px;
+	font-weight: bold;
+}
+/*styling the paragraph in the footer */
+p.hrs{
+	padding-top:0.5rem;
+	padding-left: 4rem;
+	font-size: 15px;
+	
+}
+
+/*styling the inputs of the form inside the footer*/
+.calculate input{
+background-color:#f7f7ff;
+border-radius: 5px;
+border: none;
+padding: 0.5rem;
+margin:0.5px;
+
+}
+
+/*styling the calculation form inside the footer*/
+ .calculate {
+	 
+padding-left: 4rem;
+padding-top: 0.5rem;
+}
+
+/*styling the label of the hours */
+.calculate #hours {
+	width: 6rem;
+}
+
+/*styling the label of the city*/
+.calculate #city {
+	width: 15rem;
+}
+
+/*styling the total button*/
+.calculate #total {
+	width: 12rem;
+	color: white;
+	background-color: #FF8480;
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+/*styling the socila media icon and adding grid coloumn to locate them on the side*/
+.icons {
+	
+	grid-column: 3/4;
+	grid-row: 1;
+	
+	 margin-right: 2rem;
+	 margin-bottom: 2rem;
+	 margin-top: 2rem;
+	
+}
+
+/*adding CSS Media Queriese to the tablet view */
+@media screen and (max-width:768px) {
+	body {
+
+		background-image: url(images/bg-image/scooter.svg);
+		background-repeat: no-repeat;
+		background-size: 40%;
+	    margin: 0;
+	padding: 0;}
+		
+/*setting container to grid and adding grid areas*/
+	.container{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr ;
+		justify-content: center;
+		grid-template-areas:
+		"1 1 1"
+		"2 2 2"
+		"3 3 3"
+		"4 4 4";
+	}
+	
+/*assigning grid areas to the h1*/
+	h1 {
+		display:grid;
+		grid-area:1;
+		margin-top:-50px;
+		justify-self: start;
+		font-size: 40px;}
+
+		p.start{
+
+			padding-left:4rem;
+			font-size: 20px;
+			margin-top:-20px;
+		}
+		
+	/*adding grid area to the form of the main and adjusting its content*/	
+	.table {
+		display: grid;
+		grid-area:  3;
+		justify-content: center;
+		width:22rem;
+		height: 32rem;
+		margin-top: 15rem;
+		margin-left:2.5rem;
+	}
+	 /*adjusting the form input */
+	form.form input {
+		width: 20rem;
+		height:3rem;
+		font-size: 20px;
+
+	}
+
+	p.applied {
+		font-size: 20px;
+	
+		padding-left: 1rem;
+	}
+     /*displaying the footer as flex to adjusr  its content */
+	.footer {
+		display: flex;
+		flex-wrap: wrap;
+		width: 30rem;
+	}
+	h3{
+		padding-top:1rem;
+		padding-left: 2rem;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	p.hrs{
+		padding-top:0.5rem;
+		padding-left: 2rem;
+		font-size: 10px;
+
+	}
+	
+	
+	.calculate input{
+	background-color:#f7f7ff;
+	border-radius: 5px;
+	border: none;
+	padding: 0.5rem;
+	margin:0.5px;
+	
+	}
+	
+	
+	 .calculate {
+		 
+	padding-left: 2rem;
+	padding-top: 0.5rem;
+	}
+	
+	.calculate #hours {
+		width: 5rem;
+	}
+	.calculate #city {
+		width: 10rem;
+	}
+	
+	.calculate #total {
+		width: 8rem;
+		color: white;
+		background-color: #FF8480;
+		font-size: 10px;
+		font-weight: bolder;
+	}
+	
+	.icons {
+		
+		display:flex;
+		flex-wrap: wrap;
+		flex-grow: 1;
+	justify-content: space-evenly;
+		 margin-right: 2rem;
+		 margin-bottom: 2rem;
+		 margin-top: 0.5rem;
+			
+	}
+}
+
+/*adding css media Queries to mobile view*/
+ @media screen and (max-width:375px){
+
+	 .main {
+		 display: grid;
+		 grid-template-columns: 1fr;
+		 grid-template-rows: 1fr 1fr 1fr;
+		 background-position: 40%;
+		 background-size: 60%;
+		 grid-template-areas: 
+		 "1 1 1"
+		 "2 2 2"
+		 "3 3 3";
+	 }
+
+	/*adjusting the location of the h1*/
+	h1 {
+		display:grid;
+		width: 20px;
+		grid-area:1;
+		margin-left:-2rem;
+		margin-top:-2rem;
+		justify-self: start;
+		font-size: 40px;}
+
+		p.start{
+
+			margin-left: -2rem;
+		padding-right: 2rem;
+			font-size: 15px;
+		
+		}
+
+
+		.table
+
+		{display: grid;
+		grid-area:  2;
+		justify-content: center;
+		width: 12px;
+		height: 32rem;
+		margin-top: 10rem;
+		margin-left:-4rem
+	}
+	 /*adjusting the form input */
+	form.form input {
+		width: 15rem;
+		height:3rem;
+		font-size: 20px;
+
+	}
+
+	p.applied {
+		font-size: 14px;
+	
+		padding-left: 1rem;
+	}
+	.btn {
+		font-size:20px;
+		
+}
+ 
+ .footer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 25rem;
+	height:240px;
+}
+h3{
+	padding-top:1rem;
+	padding-left: 2rem;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+img{
+	margin-left: -4rem
+}
+p.hrs{
+	padding-top:0.5rem;
+	padding-left: 2rem;
+	font-size: 10px;
+	
+}
+
+
+.calculate input{
+background-color:#f7f7ff;
+border-radius: 5px;
+border: none;
+padding: 0.5rem;
+margin:0.5px;
+
+}
+
+
+ .calculate {
+	 
+padding-left: 2rem;
+padding-top: 0.5rem;
+}
+
+.calculate #hours {
+	width:6rem;
+}
+.calculate #city {
+	width: 12rem;
+}
+
+.calculate #total {
+	width: 10rem;
+	color: white;
+	background-color: #FF8480;
+	font-size: 20px;
+	font-weight: bolder;
+	padding-left: 2rem;
+	margin-top: 2rem;
+
+}
+
+.icons {
+	
+	display:flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+justify-content: space-evenly;
+	 margin-right: 2rem;
+	 margin-bottom: 2rem;
+	 margin-top: 0.5rem;
+}		
+}

@@ -1,0 +1,116 @@
+#main.main {
+    max-width: 1200px;
+    background-color: #FFFFFA;
+}
+/** changing navigation bar style by using id and class selectors**/
+#nav.nav{
+    width: 1127px;
+    margin:0px auto;
+    padding: 30px;
+    background-color:#E1EBE8;
+    border: 5px solid  #0D5C63;
+    text-align: center;
+    }
+
+/**changing  navigation links styling by targeting id and class selctors**/
+#nav .nav-link {
+    display: inline;
+    color:black;
+    font-size:2rem;
+    margin:8rem;
+    font-family:Tahoma, Verdana, sans-serif;
+}
+/**changing home section styling by targeting id and class selectors**/
+#home.home {
+    background-color:#C3D7D5;
+    display: block;
+    margin-top: 1rem;
+    border:3px solid #0D5C63;
+    padding: 2%;
+    text-align: left;
+    font-family: verdana;
+    color: black;
+    font-size: 24px; 
+}
+/**changing home  title  by targeting id and class selectors**/
+    #home .page-title {
+        text-align: left;
+        font-family: verdana;
+        font-size: 26px;
+        margin: .0.5rem;
+        color:#043b41;
+}   
+/**changing about me section styling by targeting id and class selectors**/
+#about.about{
+    display: block;
+    text-align:left;
+    margin-top: 1rem;
+    background-color: #85ADAD;
+    border:3px solid #0D5C63;
+    color: black;
+    padding: 2%;
+    padding-top: 1%;
+    font-family: verdana;
+    font-size: 24px; 
+}
+/**changing about me  title style by targeting id and class selectors**/
+#about .section-title {
+    text-align: left;
+        font-family: verdana;
+        font-size: 26px;
+        margin: 1rem;
+        color:#043b41;
+        padding: 0%;
+}  
+
+/**changing  image size by targeting id and class selectors**/
+#about .about-image {
+    width: 200px;
+    height: 200px;
+    float:left;
+}
+/**changing contact me  section  style by targeting id and class selectors**/
+#contact.contact{
+    display:block;
+    margin-top: 1rem;
+    background-color: #4A8589;
+    border:3px solid #0D5C63;
+    padding: 1rem;
+    text-align: left;
+    font-family: verdana;
+    font-size: 26px;   
+}
+/**changing  contact form section style  by targeting id and class selectors**/
+#contact .contact-form {
+    background-color: #E1EBE8;
+    display: block;
+    max-width: 100%;
+}
+
+/**changing  styling contact me title  style by targeting id and class selectors**/
+#contact .section-title {
+    text-align: left;
+        font-family: verdana;
+        font-size: 24px;
+        margin: 2rem;
+        margin-left:1rem;
+        color:#021c1f;      
+}
+/**changing the label font and size by targeting id and child**/
+#contact .contact-form-label{
+    font-family: verdana;
+    font-size: 20px;
+}
+/**styling page footer**/
+footer {
+    text-align:center;
+    font-size: 20px;
+}
+
+/*adding media query*/
+@media screen and (max-width:760px){
+    #nav .nav-link{
+      display:flex ;
+      align-items: center;  
+}
+}
