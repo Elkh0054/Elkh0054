@@ -418,11 +418,14 @@ footer {
 }
 
 .photo1 {
+	
 	width: 100%;
 	box-shadow: 5px 5px 10px;
+	border-radius: 50%;
 }
 
 .photo2 {
+	
 	width: 100%;
 	box-shadow: 5px 5px 10px;
 	border-radius: 50%;
@@ -430,8 +433,10 @@ footer {
 }
 
 .photo3 {
-	width: 100%;
+	
+	width:100%;
 	box-shadow: 5px 5px 10px;
+	border-radius: 50%;
 }
 
 .daughter {
