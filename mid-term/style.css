@@ -8,7 +8,7 @@ html {
 
 /*-- Adding background color to the body of the home page---*/
 body {
-	background-color: beige;
+	background-color:ivory;
 	margin: 0;
 	padding: 0;
 }
@@ -51,10 +51,10 @@ header {
 
 /*--Styling the logobar which add background-image to the navigatin bar---*/
 #logbar {
-	background-image: url(images/background-navigation.jpg);
+	background-image: url(images/many-colored-pencils-as-colorful-background_81724-110.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	padding: 2rem;
+	padding:4rem;
 	box-shadow: 5px 5px 20px;
 }
 
@@ -152,6 +152,7 @@ header {
 	bottom: 40px;
 	margin-left: 100px;
 	font-size: 30px;
+	color: red;
 
 }
 
