@@ -1,121 +1,593 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 /*******Styling Homepage*********/
 
-html{
-font-family: Arial, Helvetica, sans-serif;
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
-header{
-	 display: flex;
-	background-color:black;
-	height: 2rem;
+/*-- Adding background color to the body of the home page---*/
+body {
+	background-color: beige;
+	margin: 0;
+	padding: 0;
 }
 
-.question{
+/*-- Styling header of the home page---*/
+header {
 	display: flex;
+	background-color: black;
+	height: 5rem;
+
+}
+
+.question {
+	position: relative;
+	left: 360px;
+	top: 40px;
 	color: white;
-	justify-content: start;
 	margin: 0.5rem;
 	font-size: 15px;
-	
+
 }
 
-.icons{
-	position: relative;
-	margin-left:60rem;
-	margin-top:-1.5rem;
-	padding-right: 2rem;
-	padding: 1px 1px 1px;
+.icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: 380px;
+	margin-top: -40px;
 	color: white;
 	font-size: 2px;
-	
+}
+
+.im {
+	margin: 20px 20px;
+}
+
+.im:hover {
+	color: orchid;
+}
+
+/*--Styling the logobar which add background-image to the navigatin bar---*/
+#logbar {
+	background-image: url(images/background-navigation.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 2rem;
+	box-shadow: 5px 5px 20px;
+}
+
+/*--Styling the logo and add animation turning to move it---*/
+.logo {
+	position: relative;
+	left: 330px;
+	top: 40px;
+}
+
+@keyframes turning {
+	0% {
+		border-radius: 0 0 0 0;
+		transform: rotate(0deg);
 	}
-	
 
-body{
-	background-color: beige;
+	25% {
+		border-radius: 50% 0 0 0;
+		transform: rotate(45deg);
+	}
+
+	50% {
+		border-radius: 50% 50% 0 0;
+		transform: rotate(90deg);
+	}
+
+	75% {
+		border-radius: 50% 50% 50% 0;
+		transform: rotate(135deg);
+	}
+
+	100% {
+		border-radius: 50% 50% 50% 50%;
+		transform: rotate(180deg);
+	}
 }
 
-#logbar{
-display: flex;
-padding: 2rem;
+.logo {
+	width: 120px;
+	height: 120px;
+	margin: 50px;
+	animation: turning 2s ease-out 1s infinite alternate;
 }
-#top{
-width: 8rem;
-margin-top: -40px;
+
+.logo:hover {
+	animation-play-state: paused;
 }
+
+/*--Styling the nav bar --*/
 .nav li {
-    display: inline-block;
-    margin: 0;
-    border-right: 2px black; 
-    width: 20rem;
-    text-align: center;
+	position: relative;
+	right: 30px;
+	display: block;
+	margin: 10px 10px;
+	text-align: center;
 
 }
+
 .nav a {
 	text-decoration: none;
-	padding-top: 2rem;
-	font-size: 20px;
-	font-weight:bold;
+	font-size: 25px;
+	font-weight: bold;
 	color: black;
 }
 
-.main {
-	background-image: url(images/Rocka-Logo.gif);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 50%;
-	width:1920px;
-	height:900px;
+.nav a:hover {
+	color: orchid;
+}
 
-	 
+/*--Adding width to the rocka image---*/
+.rocka {
+	width: 100%;
+	box-shadow: 5px 5px 20px;
+
+}
+
+/*---Styling the h3 which adding font-weight and bold---*/
+.open {
+	font-size: 40px;
+	position: relative;
+	margin-left: 350px;
+	bottom: 30px;
+	font-weight: bold;
+
+}
+
+.open:hover {
+	color: rgb(95, 46, 93);
+	transition: 1s;
+}
+
+/*--Styling the paragraph on the home page---*/
+.hour {
+	position: relative;
+	bottom: 40px;
+	margin-left: 100px;
+	font-size: 30px;
+
+}
+
+/*--Styling  art-classes on the home page---*/
+.art {
+	display: flex;
+	justify-content: center;
+	font-size: 50px;
+	margin-bottom: 40px;
+	position: relative;
+	top: 20px;
+
+}
+
+.art:hover {
+	color: white;
+	transition: 1s;
+}
+
+.class {
+	font-size: 35px;
+	margin-left: 20px;
+
+}
+
+.class:hover {
+	color: white;
+	transition: 1s;
+}
+
+/*---Styling contact class on the home page---*/
+.contact {
+	position: relative;
+	top: 635px;
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+.contact:hover {
+	background-image: url(images/colors-photo.jpg);
+	transition: 1s;
+}
+
+/*---Styling the footer --*/
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+
+}
+
+.copy {
+	color: white;
+}
+
+/*--Adding the width to the girl image on the home page---*/
+.girl {
+	width: 100%;
+
+}
+
+/*---Making animation box to the art-classes---*/
+.classes {
+	width: 100%;
+	height: 500px;
+	animation: pulse 5s infinite;
+	box-shadow: 5px 5px 20px;
+}
+
+@keyframes pulse {
+	0% {
+		background-color: #001F3F;
+	}
+
+	100% {
+		background-color: #FF4136;
+	}
+}
+
+/*--Adding media quries to the tablet screen---*/
+@media screen and (min-width: 1200px) {
+
+	/*--Fix the icons bar---*/
+	.question {
+		left: 200px;
+		top: 40px;
+	}
+
+	.icons {
+	  justify-content: flex-end;
+	  margin-right: -900px;
+	  margin-top: -10px; 
+	}
+
+	/*--Fix the logo and nav bar---*/
+	.logo {
+		top: 90px;
+		right: 180px;
+	}
+
+	.nav li {
+		display: inline-block;
+		left: 500px;
+		bottom: 60px;
+		
+	}
+
+	/*--Fix the h3 and the paragraph---*/
+	.open {
+		margin-left: 30px;
+	}
+
+	.hour {
+		margin-left: 30px;
+	}
+
+	/*--Fix the girl image---*/
+	.girl {
+		margin-top: -90px;
+	}
+}
+
+/*---Adding media to the min-width:1270px to fix the home page---*/
+@media screen and (min-width: 1270px) {
+	/*---Fix the icon bar--*/
+    .icons{
+		margin-right: -1000px;
+	}
+	
+
+	/*--Fix the logo and nav bar---*/
+	.nav li {
+		left: 600px;
+	}
+
+	.logo {
+		left: 30px;
+	}
+
+	/*--Fix the girl image---*/
+	.girl {
+		width: 50%;
+		margin-top: 30px;
+		border-radius: 50%;
+	}
+
+	.contact {
+		float: right;
+		position: relative;
+		top: 70px;
+		right: 100px;
+	}
+}
+
+/*---Adding media to the min-width:1800px to fix the home page---*/
+@media screen and (min-width: 1800px) {
+
+	/*--Fix the  nav bar---*/
+	.nav li {
+		left: 800px;
+		top: 20px;
+	}
+	.icons{
+		margin-right:-1400px ;
+	}
+
+	/*--fix the contact ---*/
+	.contact {
+		margin-right: 30px;
+		width: 30%;
+	}
+
+	.logo {
+		top: 110px;
+	}
+
+}
+
+/*--Adding media min-width: 1920px to fix the desktop screen---*/
+@media screen and (min-width: 1920px) {
+    /*--fix icons---*/
+	.icons{
+		margin-right:-2600px ;
+	}
+
+	/*--Fix the  nav bar---*/
+	.nav li {
+		left: 1500px;
+		top: -100px;
+		margin: 25px 25px;
+
+	}
+
+	/*--fix the contact ---*/
+	.contact {
+		margin-right: 30px;
+		width: 30%;
+	}
+
+	.logo {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 900px;
+		margin-top: 300px;
+	}
+
+	.nav a {
+		font-size: 30px;
+	}
+
+	.rocka {
+		width: 80%;
+		position: relative;
+		left: 250px;
+	}
+
+	.open {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.hour {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.classes {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 50%;
+		margin-left: 800px;
+	}
+
+	.art {
+		right: 200px;
+	}
+
+	.contact {
+		float: left;
+		margin-left: 400px;
+		text-align: center;
+		position: relative;
+		top: 400px;
+	}
+
+}
+
+/*----Styling about-us page----*/
+.about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+.about:hover {
+	color: goldenrod;
+	transition: 1s;
+}
+
+.photo1 {
+	width: 100%;
+	box-shadow: 5px 5px 10px;
+}
+
+.photo2 {
+	width: 100%;
+	box-shadow: 5px 5px 10px;
+	border-radius: 50%;
+
+}
+
+.photo3 {
+	width: 100%;
+	box-shadow: 5px 5px 10px;
+}
+
+.daughter {
+	font-size: 40px;
+	margin-left: 10px;
+}
+
+/*--Adding media quries on about-us page to fix the tablet screen---*/
+@media screen and (min-width: 1200px) {
+	.photo1 {
+		border-radius: 40px;
+	}
+
+	.photo3 {
+		border-radius: 40px;
+	}
+}
+
+/*--- Adding media min-width:1270px---*/
+@media screen and (min-width: 1270px) {
+	.about:hover {
+		color: orchid;
+	}
+}
+
+/*--Adding media min-width: 1920px to fix the desktop screen---*/
+@media screen and (min-width: 1920px) {
+	.content {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: "header main ser1"
+			"ser2 ser3 ser4";
+	}
+
+	.photo1 {
+		grid-area: header;
+		margin-left: 20px;
+	}
+
+	.photo3 {
+		grid-area: ser1;
+		position: relative;
+		bottom: 1375px;
+		left: 1000px;
+	}
+
+	.about {
+		grid-area: main;
+	}
+
+	.photo2 {
+		grid-area: ser4;
+		position: relative;
+		left: 1000px;
+
+	}
+
+	.daughter {
+		grid-area: ser2;
+		position: relative;
+		top: 500px;
+		right: 1000px;
+		font-size: 70px;
+	}
+}
+
+/*---Styling the contact-us page---*/
+/*---Styling the form on contact page---*/
+/* Style inputs with type="text", and textareas */
+input[type=text],
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+label {
+	font-size: 20px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+	margin-top: 50px;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	box-shadow: 5px 5px 20px;
+}
+
+textarea {
+	height: 200px;
+}
+
+.location {
+	width: 100%;
+	margin-top: 30px;
+	box-shadow: 5px 5px 20px;
+}
+
+.information {
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin: 20px;
+}
+
+/*--Adding media min-width: 1920px to fix the desktop screen---*/
+@media screen and (min-width: 1920px) {
+	.contactpage {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "header main"
+			"header main "
+			"ser ser";
+	}
+
+	.container {
+		grid-area: header;
+		grid-column: 1/2;
+		grid-row: 1/3;
+		width: 93%;
+        margin-left: 30px;
+	}
+
+	.location {
+		grid-area: main;
+		grid-column: 2/3;
+		grid-row: 3/4;
+		width: 97%;
+	}
+
+	.information {
+		grid-area: ser;
+		grid-row: 2/4;
+		grid-column: 2/4;
+		
+	}
 
 }
