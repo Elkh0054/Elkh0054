@@ -61,8 +61,20 @@ header {
 /*--Styling the logo and add animation turning to move it---*/
 .logo {
 	position: relative;
-	left: 330px;
+	left:330px;
 	top: 40px;
+	
+}
+
+.logo {
+	width: 120px;
+	height: 120px;
+	margin: 50px;
+	animation: turning 2s ease-out 1s infinite alternate;
+}
+
+.logo:hover {
+	animation-play-state: paused;
 }
 
 @keyframes turning {
@@ -92,16 +104,7 @@ header {
 	}
 }
 
-.logo {
-	width: 120px;
-	height: 120px;
-	margin: 50px;
-	animation: turning 2s ease-out 1s infinite alternate;
-}
 
-.logo:hover {
-	animation-play-state: paused;
-}
 
 /*--Styling the nav bar --*/
 .nav li {
