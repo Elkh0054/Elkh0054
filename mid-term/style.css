@@ -49,7 +49,7 @@ header {
 	color: orchid;
 }
 
-/*--Styling the logobar which add background-image to the navigatin bar---*/
+/*--Styling the logobar and adding background-image to the navigatin bar---*/
 #logbar {
 	background-image: url(images/many-colored-pencils-as-colorful-background_81724-110.jpg);
 	background-repeat: no-repeat;
@@ -58,7 +58,7 @@ header {
 	box-shadow: 5px 5px 20px;
 }
 
-/*--Styling the logo and add animation turning to move it---*/
+/*--Styling the logo and adding animation to make it turn around---*/
 .logo {
 	position: relative;
 	left:330px;
@@ -134,7 +134,7 @@ header {
 
 }
 
-/*---Styling the h3 which adding font-weight and bold---*/
+/*---Styling the h3 and setting its position and font---*/
 .open {
 	font-size: 40px;
 	position: relative;
@@ -143,7 +143,7 @@ header {
 	font-weight: bold;
 
 }
-
+/**---adding color effect while hovering ---*/
 .open:hover {
 	color: rgb(95, 46, 93);
 	transition: 1s;
@@ -159,7 +159,7 @@ header {
 
 }
 
-/*--Styling  art-classes on the home page---*/
+/*--Styling  art-classes section on the home page---*/
 .art {
 	display: flex;
 	justify-content: center;
@@ -250,7 +250,7 @@ footer {
 	  margin-top: -10px; 
 	}
 
-	/*--Fix the logo and nav bar---*/
+	/*--set the logo and nav bar---*/
 	.logo {
 		top: 90px;
 		right: 180px;
@@ -263,7 +263,7 @@ footer {
 		
 	}
 
-	/*--Fix the h3 and the paragraph---*/
+	/*--set the h3 and the paragraph---*/
 	.open {
 		margin-left: 30px;
 	}
@@ -272,13 +272,13 @@ footer {
 		margin-left: 30px;
 	}
 
-	/*--Fix the girl image---*/
+	/*--set the girl image---*/
 	.girl {
 		margin-top: -90px;
 	}
 }
 
-/*---Adding media to the min-width:1270px to fix the home page---*/
+/*---Adding media to the min-width:1270px to set the home page---*/
 @media screen and (min-width: 1270px) {
 	/*---Fix the icon bar--*/
     .icons{
@@ -286,7 +286,7 @@ footer {
 	}
 	
 
-	/*--Fix the logo and nav bar---*/
+	/*--setting the logo and nav bar---*/
 	.nav li {
 		left: 600px;
 	}
@@ -295,7 +295,7 @@ footer {
 		left: 30px;
 	}
 
-	/*--Fix the girl image---*/
+	/*--setting the girl image---*/
 	.girl {
 		width: 50%;
 		margin-top: 30px;
@@ -310,10 +310,10 @@ footer {
 	}
 }
 
-/*---Adding media to the min-width:1800px to fix the home page---*/
+/*---Adding media to the min-width:1800px to set the home page---*/
 @media screen and (min-width: 1800px) {
 
-	/*--Fix the  nav bar---*/
+	/*--setting the  nav bar---*/
 	.nav li {
 		left: 800px;
 		top: 20px;
@@ -322,7 +322,7 @@ footer {
 		margin-right:-1400px ;
 	}
 
-	/*--fix the contact ---*/
+	/*--setting the contact ---*/
 	.contact {
 		margin-right: 30px;
 		width: 30%;
@@ -334,14 +334,14 @@ footer {
 
 }
 
-/*--Adding media min-width: 1920px to fix the desktop screen---*/
+/*--Adding media min-width: 1920px to set the desktop screen---*/
 @media screen and (min-width: 1920px) {
-    /*--fix icons---*/
+    /*--set icons---*/
 	.icons{
 		margin-right:-2600px ;
 	}
 
-	/*--Fix the  nav bar---*/
+	/*--set the  nav bar---*/
 	.nav li {
 		left: 1500px;
 		top: -100px;
@@ -349,7 +349,7 @@ footer {
 
 	}
 
-	/*--fix the contact ---*/
+	/*--set the contact ---*/
 	.contact {
 		margin-right: 30px;
 		width: 30%;
@@ -447,7 +447,7 @@ footer {
 	margin-left: 10px;
 }
 
-/*--Adding media quries on about-us page to fix the tablet screen---*/
+/*--Adding media quries on about-us page to set the tablet screen---*/
 @media screen and (min-width: 1200px) {
 	.photo1 {
 		border-radius: 40px;
@@ -465,7 +465,7 @@ footer {
 	}
 }
 
-/*--Adding media min-width: 1920px to fix the desktop screen---*/
+/*--Adding media min-width: 1920px to set the desktop screen---*/
 @media screen and (min-width: 1920px) {
 	.content {
 		display: grid;
@@ -520,7 +520,7 @@ textarea {
 	margin-bottom: 16px;
 }
 
-/* Style the submit button with a specific background color etc */
+/* Stylung the submit button with a specific background color etc */
 input[type=submit] {
 	background-color: #4CAF50;
 	color: white;
