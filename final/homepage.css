@@ -51,3 +51,27 @@ table {
 
 @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Rubik:wght@300;600&display=swap');
 
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	text-decoration:none;
+}
+
+/********navbar***********/
+.navbar{
+	position:fixed;
+	width:100%;
+	background:crimson;
+	font-family:r'Rubik', sans-serif;
+}
+
+.navbar .logo a {
+	color:#fff;
+	font-size: 35px;
+	font-weight:600 ;
+}
+
+.navbar .menu li a{
+	color:#fff;
+}
