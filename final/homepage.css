@@ -47,11 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-main{
-    background-color:rgb(243, 243, 236);
-}
-.bck {
-    display:flex;
-    flex-wrap: inherit;
-    margin-left:auto;
-}
+/********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Rubik:wght@300;600&display=swap');
+
