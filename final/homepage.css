@@ -59,17 +59,32 @@ table {
 }
 
 /********navbar***********/
+.max-width{
+	max-width: 1300px;
+	padding:0 80px;
+	margin:auto;
+}
 .navbar{
 	position:fixed;
 	width:100%;
 	background:crimson;
 	font-family:r'Rubik', sans-serif;
 }
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
 .navbar .logo a {
 	color:#fff;
 	font-size: 35px;
 	font-weight:600 ;
+}
+
+.navbar .menu li {
+	list-style:none;
+	display: inline-block;
 }
 
 .navbar .menu li a{
