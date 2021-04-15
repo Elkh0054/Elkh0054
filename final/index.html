@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>portfolio</title>
-
-    <link rel="stylesheet" href="homepage.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
-<body>
-    <header class="header">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-        <div class="container">
-            <div class="navbar-header">
-                <a href=""><img class="logo"   src="images/Amira-logo.jpg" alt=""></a>
+<body class="bg-light">
+<!--creating and styling a nav bar-->
+<nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+    <div class="container-lg">
+      <a class="navbar-brand fw-bold fs-3" href="#">Amira Elkhateeb</a>
+
+      <div class="dropdown">
+        <button class="btn btn-secondary btn-danger px-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+       <i class="fas fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#home">Home</a></li>
+          <li><a class="dropdown-item" href="#about">About</a><li>
+          <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+          <li><a class="dropdown-item" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+        <!-----creating the homepage content------>
+ <section class="home py-5">
+     <div class="container-lg">
+      <div class="row min-vh-100 align-items-center align-content-center">
+          <div class="col-md-6">
+        <div class="home-img"> <img src="images/Amira-logo.jpg"  class="rounded-circle" alt="profile image"></div>
+           </div>
+           <div class="col-md-6 order-md-first">
+               <div class="home-text">
+               <p>Hello I'm</p>
+               <h1>Amira Elkhateeb</h1>
+               <h2>I'm a Designer</h2>
+               <p>I'm passionate about anything related to media and will work everyday to learn more about all its fields </p>
+
+               <a href="#portfolio">My Work</a>
+
             </div>
-            
-            <ul class="navbar navbar-expand-md ">
-                <li><a href="">Home</a></li>
-                <li><a href="">About-Me</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Contact</a></li>
-
-            </ul>
+           </div>
         </div>
-    </nav>
-    </header>
+     </div>
+ </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
